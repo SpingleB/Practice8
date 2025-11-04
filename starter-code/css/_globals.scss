@@ -2,3 +2,12 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    width: 100vw;
+    box-sizing: var(--box-sizing);
+}
+
+html, body {
+    overflow-x: hidden;
+}

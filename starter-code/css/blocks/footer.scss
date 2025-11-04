@@ -1,0 +1,86 @@
+footer {
+    width: var(--full-width);
+    box-sizing: var(--box-sizing);
+}
+
+.footer__zero-two-figure-div {
+    margin-top: 50px;
+    width: var(--full-width);
+    box-sizing: var(--box-sizing);
+    @include flex-direction-center;
+
+    p {
+        @include flex-center;
+        border: var(--round-border);
+        border-radius: var(--border-radius);
+        @include circle;
+        font-size: var(--font-size-16);
+        color: var(--slate-600);
+        font-weight: var(--font-weight-900);
+        background-color: var(--color-white);
+        margin-bottom: -25px;
+        z-index: 1;
+    }
+}
+
+.footer-vertical-line {
+    width: 1px;
+    height: 75px;
+    background-color: var(--slate-300);
+}
+
+.footer_div-for-info { 
+  width: 100vw;
+  background-color: var(--cyan-600);
+  background-image: url("/starter-code/assets/mobile/image-footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  box-sizing: var(--box-sizing);
+}
+
+.footer__div-for-info--color {
+    width: var(--full-width);
+    background-color: hsla(190, 38%, 48%, 0.85);
+    box-sizing: var(--box-sizing);
+    @include flex-direction-center;
+    gap: var(--gap-x3);
+    margin: 0;
+    
+    h2 {
+        margin-top: 60px;
+        width: 90%;
+        text-align: var(--text-align-center);
+        color: var(--color-white);
+        font-weight: var(--font-weight-800);
+        font-size: 30px;
+        line-height: 1;
+    }
+
+    p {
+        color: var(--color-white);
+        font-size: 17px;
+        font-weight: 500;
+        width: 85%;
+        text-align: var(--text-align-center);
+    }
+
+    #btn-download-f {
+       @include flex-center;
+        box-sizing: var(--box-sizing);
+        background-color: var(--purple-600);
+        font-size: var(--font-size-19);
+        color: var(--color-white);
+        font-weight: var(--font-weight-800);
+        width: 235px;
+        height: 70px;
+        border-radius: var(--btns-radius);
+        margin-bottom: 60px;
+
+        span{
+            color: var(--purple-300);
+            margin-left: 5%;
+        }
+    }
+}

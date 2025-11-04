@@ -1,65 +1,84 @@
 @import 'mixins';
 
 main {
-    width: 100%;
+    width: var(--full-width);
 }
 
 .main__zero-one-figure-div {
     margin-top: 50px;
-    width: 100%;
-    box-sizing: border-box;
+    width: var(--full-width);
+    box-sizing: var(--box-sizing);
     @include flex-direction-center;
 
     p {
         @include flex-center;
-        border: solid 1px #D1D1DF;
-        border-radius: 50%;
-        width: 20%;
-        height: 75px;
-        font-size: 20px;
-        color: #87879D;
-        font-weight: 900;
+        border: var(--round-border);
+        border-radius: var(--border-radius);
+        @include circle;
+        font-size: var(--font-size-16);
+        color: var(--slate-600);
+        font-weight: var(--font-weight-900);
     }
 }
 
 .main__vertical-line {
     width: 1px;
     height: 75px;
-    background-color: #D1D1DF;
+    background-color: var(--slate-300);
 }
 
 .main__div-for-4-photos {
     margin-top: 60px;
-    box-sizing: border-box;
+    box-sizing: var(--box-sizing);
     padding: 0 8%;
-    display: grid;
+    display: var(--display-grid);
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 30px;
-    row-gap: 20px;
+    gap: var(--gap-x3);
+    row-gap: var(--gap-x2);
 
     div {
-        width: 100%;
+        width: var(--full-width);
         overflow: hidden;
     }
 
     img {
-        width: 100%;
+        width: var(--full-width);
         border-radius: 12px;
     }
 }
 
 .main__div-for-info {
-    width: 100%;
+    width: var(--full-width);
     margin-top: 60px;
+    @include flex-direction-center;
+    gap: var(--gap-x1and5);
 
     #first-p {
-        text-align: center;
-        font-size: 16px;
-        font-weight: 900;
-        color: #4D96A9;
-        letter-spacing: 3px;
+        text-align: var(--text-align-center);
+        font-size: var(--font-size-16);
+        font-weight: var(--font-weight-800);
+        color: var(--cyan-600);
+        letter-spacing: 4px;
+        font-weight: var(--font-weight-900);
     }
 
+    h2 {
+        font-size: 32px;
+        text-align: var(--text-align-center);
+        width: 330px;
+        line-height: 1;
+        color: var(--slate-900);
+        font-weight: var(--font-weight-900);
+    }
+
+    #main__div-for-info-description {
+        font-size: var(--font-size-20);
+        text-align: var(--text-align-center);
+        width: 80%;
+        color: var(--slate-600);
+        font-weight: var(--font-weight-600);
+        line-height: 1.5;
+    }
 }
 
